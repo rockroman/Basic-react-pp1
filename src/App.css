@@ -1,0 +1,1172 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+/* setting a color palette for project with creating css variables */
+#root {
+  /* padding: 0 0.6%;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Libre Caslon Text", serif; */
+}
+:root {
+  --clr-navigation: #457b9d;
+  --clr-hero-txt: #ffffff;
+  --clr-hero2-txt: #0b0b25;
+  --clr-header-nav-footer: #0a0a0a;
+  --clr-hr-background: #bf1b34;
+  --clr-button: #056639;
+}
+/* smooth scroll for back to top button */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* padding: 0 0.6%; */
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Libre Caslon Text", serif;
+}
+
+#back_to_top {
+  position: fixed;
+  bottom: 1%;
+  right: 5%;
+  font-size: 2.3rem;
+  color: #e8f2e8;
+  z-index: 1200;
+  font-weight: bolder;
+  border: 3px solid var(--clr-button);
+  background-color: #01070b;
+}
+
+/* putting logo of company in top left corner(logo made with "looka.com" */
+#logo1 {
+  width: 90px;
+  height: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: inset 2px 1px 1px 0.5px rgb(0, 0, 0);
+  margin: 0 0 0 5%;
+  z-index: 1200;
+}
+
+/* navigation for desktop style */
+.desktop-nav {
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  height: 60px;
+}
+
+.nav-link {
+  justify-content: center;
+  width: 70%;
+  display: flex;
+  gap: 4%;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--clr-hero-txt);
+  font-weight: 540;
+  padding: 5px;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+/* making a sliding navigation(original idea by'Angela Delise' */
+
+#logo {
+  width: 100px;
+  margin: 1% 0 0 5%;
+  z-index: 1200;
+}
+
+.nav {
+  border-bottom: 2px solid rgb(17, 19, 19);
+  position: absolute;
+  width: 100%;
+  background-color: var(--clr-hero-txt);
+}
+
+.nav,
+label {
+  z-index: 1000;
+}
+
+.label-dummy {
+  display: none;
+}
+
+.nav-toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0.2rem 1rem 1.5rem 0;
+  right: 2%;
+}
+
+#bars,
+#close {
+  width: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--clr-hero-txt);
+}
+
+#close {
+  display: none;
+  color: var(--clr-hero-txt);
+}
+
+#bars {
+  margin-top: 0.2rem;
+}
+.nav-checkbox {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 0px;
+  position: absolute;
+  left: -100vw;
+  transition: left 0.6s ease-out;
+  padding-left: 0px;
+  padding-top: 140px;
+}
+
+.nav-menu li {
+  list-style: none;
+  color: var(--clr-hero2-txt);
+  font-size: 165%;
+}
+
+ul a {
+  text-decoration: none;
+  font-size: 105%;
+  color: var(--clr-hero-txt);
+  font-weight: 600;
+}
+
+#nav-checkbox:checked ~ .nav-menu {
+  left: -1%;
+  background-color: var(--clr-navigation);
+  height: 61vh;
+  width: 100%;
+  z-index: 15;
+}
+
+#nav-checkbox:checked ~ label.nav-toggle #close {
+  display: block;
+  z-index: 1000;
+}
+
+#nav-checkbox:checked ~ label.nav-toggle #bars {
+  display: none;
+}
+/* setting a hero img to cover entire hero section */
+
+#hero {
+  background-image: url(./images/hero-img-desktop-pexels-saeid-anvar-.webp);
+  background-size: cover;
+  background-position: 74%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+  background-color: var(--clr-header-nav-footer);
+}
+
+.section-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 2rem;
+  color: var(--clr-hero-txt);
+  width: 65%;
+}
+
+/* bottom hero section is flex container it makes easier aligning button with call to action */
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2%;
+  align-items: flex-end;
+}
+
+#start-now {
+  padding: 1.5% 4%;
+  border: 2px solid var(--clr-header-nav-footer);
+  box-shadow: 2px 1px 3px var(--clr-navigation);
+  background-color: var(--clr-button);
+  color: var(--clr-hero-txt);
+  font-size: 0.8rem;
+  text-decoration: none;
+  border: outset;
+  margin: 0 2% -7% 0;
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+}
+
+a#start-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section {
+  padding: 0.6%;
+  margin-top: 0%;
+}
+
+h2 {
+  font-size: 1.95rem;
+  width: 85%;
+  margin-top: 0;
+  vertical-align: bottom;
+}
+
+#welcome-message > img {
+  max-width: 900px;
+  margin-bottom: 4%;
+  height: auto;
+  width: auto;
+}
+
+#welcome-message {
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome-text {
+  width: 95%;
+  font-size: 1.15rem;
+  padding: 2%;
+  text-align: left;
+  margin: auto;
+}
+
+em {
+  font-weight: 800;
+}
+
+/* styling horizontal reference to clearly separate sections */
+hr {
+  height: 1px;
+  background-color: var(--clr-hr-background);
+  border: 1.5px solid var(--clr-header-nav-footer);
+  width: 90%;
+  margin: 5% auto;
+}
+
+/* our services section is giving insigt to user what SURF-ON is offering */
+#services {
+  padding: 2% 0;
+  margin: 0;
+}
+
+#services > h3 {
+  font-size: 1.7rem;
+  margin-top: 1%;
+  text-align: center;
+}
+
+#service-cards {
+  display: flex;
+  padding: 1%;
+  gap: 2%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#lessons {
+  padding: 4% 0;
+  margin-top: 2%;
+}
+
+#lessons > h2 {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#our-lessons {
+  width: 100%;
+}
+
+#lessons > p {
+  font-size: 1.15rem;
+  margin-bottom: 0;
+  text-align: initial;
+  padding: 0 2%;
+}
+
+#camps {
+  padding: 4% 0;
+  margin-top: 4%;
+}
+
+#camps > h2 {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#our-camps {
+  width: 100%;
+}
+
+#camps > p {
+  font-size: 1.15rem;
+  margin-bottom: 0;
+  text-align: initial;
+  padding: 0 2%;
+}
+
+#rental {
+  padding: 1%;
+  margin-top: 7%;
+}
+
+#rental > h2 {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#our-rental {
+  width: 100%;
+}
+
+#rental > p {
+  font-size: 1.15rem;
+  margin-bottom: 0;
+  padding: 2%;
+}
+
+#testemonial-quote {
+  padding: 3%;
+  border: 1px solid var(--clr-hero2-txt);
+  margin: 6% 0.5% 0 0.5%;
+  background-color: var(--clr-hero-txt);
+}
+
+#testemonial-quote > p {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--clr-hr-background);
+  border: 1.5px solid var(--clr-header-nav-footer);
+  margin-top: 40px;
+}
+
+/* LESSONS SECTION */
+.lessons-title {
+  font-weight: 500;
+  font-size: 150%;
+}
+
+.lessons-subtitle {
+  font-weight: 600;
+  margin-top: 2%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#lessons1 {
+  padding: 0.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.lessons-card {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 2%;
+  border: 0.5px inset;
+}
+
+.lessons-card em {
+  color: var(--clr-header-nav-footer);
+  font-weight: 400;
+}
+
+h6 {
+  margin-bottom: 1%;
+  font-size: 105%;
+}
+
+.lessons-card p {
+  font-weight: 200;
+  font-size: 1.15rem;
+}
+
+.start-now2 {
+  padding: 2% 4%;
+  border: 2px solid var(--clr-header-nav-footer);
+  background-color: var(--clr-button);
+  color: var(--clr-hero-txt);
+  font-size: 0.8rem;
+  text-decoration: none;
+  border: outset;
+  width: 100px;
+  height: 25px;
+}
+
+.start-now2 > p {
+  font-size: 0.8rem;
+}
+
+a.start-now2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#camps1 {
+  margin-bottom: 5%;
+  position: relative;
+  height: 40vh;
+}
+
+/* carousel styling */
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.5%;
+}
+
+.slides {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.slide-title {
+  letter-spacing: 0.5px;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slides-item {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 70vh;
+  justify-content: flex-start;
+  margin: 0 1rem;
+  position: relative;
+  scroll-snap-align: start;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.5s;
+  width: 100%;
+}
+
+.carousel__nav {
+  padding: 1.25rem 0.5rem;
+  padding-top: 0;
+}
+
+.slider-nav {
+  align-items: center;
+  background-color: #ddd;
+  border-radius: 50%;
+  color: #000;
+  display: inline-flex;
+  height: 1.5rem;
+  justify-content: center;
+  padding: 0.5rem;
+  position: relative;
+  text-decoration: none;
+  width: 1.5rem;
+}
+
+.slider-nav:hover,
+.slider-nav:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.slide-1 {
+  background-image: url(./images/carousel-img1-small-pexels-cemal-taskiran.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide-2 {
+  background-image: url(./images/carousel-img2-small-pexels-wendy-wei.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide-3 {
+  background-image: url(./images/carousel-img3-small-pexels-nikita-igonkin.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* GALLERY SECTION */
+#gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4%;
+}
+
+picture {
+  margin: 0;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+}
+
+/* about section */
+#about-us {
+  padding: 0.6%;
+  scroll-margin-top: -20px;
+}
+
+#about-us > h2 {
+  text-align: center;
+  width: 100%;
+  padding-top: 8%;
+  color: var(--clr-hero2-txt);
+}
+
+#about-hero {
+  width: 100%;
+  height: auto;
+}
+
+.text-story > h3 {
+  font-size: 1.5rem;
+  color: var(--clr-hero2-txt);
+  text-align: center;
+  padding-top: 2%;
+  margin-bottom: 8%;
+}
+
+.text-story {
+  margin-top: 0.5%;
+}
+
+.text-story > p {
+  font-size: 1.15rem;
+  padding: 2%;
+}
+
+h3 {
+  text-align: center;
+}
+
+.map {
+  max-width: 450px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* our team */
+#our-team > h3 {
+  font-size: 1.5rem;
+}
+
+.instructor-card {
+  width: 100%;
+  max-width: 640px;
+  margin-bottom: 20%;
+}
+
+.instructor-img {
+  width: 100%;
+}
+
+.instructor-card > h4 {
+  color: var(--clr-header-nav-footer);
+  margin-top: 0px;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+}
+
+.instructor-card > p {
+  margin-top: 1%;
+  font-size: 1.15rem;
+}
+
+/* creating a contact form */
+#map {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#contact-us {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#bottom-form {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3%;
+  color: oldlace;
+  font-family: system-ui, apple-system, Roboto, sans-serif;
+}
+
+.my-form {
+  box-sizing: border-box;
+  height: auto;
+  border: 2px solid rgba(167, 163, 130, 0.708);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 1% 4%;
+  max-width: 450px;
+  margin: 1% 0;
+}
+
+.form {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+#full-name,
+#phone,
+#email {
+  width: 75%;
+  box-shadow: 0 1px 3px var(--clr-header-nav-footer);
+  height: 1.25rem;
+  padding: 2%;
+  border-radius: 0.3rem;
+  margin: 0 auto;
+}
+
+label {
+  color: var(--clr-header-nav-footer);
+  font-size: 1rem;
+  font-weight: 700;
+  padding-left: 13%;
+  margin-top: 3%;
+}
+
+textarea {
+  width: 79%;
+  margin-left: 10%;
+}
+
+#contact {
+  width: 180px;
+  height: 45px;
+  margin: auto 10%;
+  background-color: var(--clr-button);
+  margin-top: 3%;
+  color: var(--clr-hero-txt);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+#contact:hover {
+  cursor: pointer;
+}
+
+.adress,
+.call,
+.mail {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  color: var(--clr-header-nav-footer);
+  border: 0.5px outset;
+  padding: 1%;
+}
+
+#bottom-form p {
+  font-size: 1.25rem;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#bottom-form i {
+  font-size: 1.45rem;
+}
+
+/* footer section */
+footer {
+  background-color: var(--clr-header-nav-footer);
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px auto;
+}
+
+footer #logo2 {
+  width: 100px;
+  border: 2px solid rgb(0, 0, 0);
+  z-index: 1200;
+}
+
+#right-side {
+  height: 86%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer p {
+  color: var(--clr-hero-txt);
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.trade-mark {
+  color: var(--clr-hero-txt);
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.trade-mark > a {
+  text-decoration: none;
+  color: white;
+}
+
+.social-media {
+  font-size: 1.5rem;
+  margin-top: 1%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.social-media a {
+  color: #1663a3;
+}
+
+.social-media a:hover {
+  color: var(--clr-hr-background);
+}
+
+/* page 404 style */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-404 {
+  background-image: url(../images/404-img-pexels-para-bromas-small.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--clr-header-nav-footer);
+  flex: 1;
+}
+
+.page-404-title {
+  width: 100%;
+  font-size: 7rem;
+  margin-bottom: 0;
+  text-align: center;
+  color: rgb(211, 19, 19);
+  font-family: "Ceviche One";
+}
+
+.page-404-subtitle {
+  font-size: 1.7rem;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: var(--clr-hero-txt);
+  font-style: oblique;
+}
+
+.page-404 h2 {
+  width: 100%;
+  text-align: center;
+  color: bisque;
+  font-size: 4rem;
+  font-family: "Ceviche One";
+  margin-top: 0;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-btn {
+  background-color: var(--clr-button);
+  color: var(--clr-hero-txt);
+  text-decoration: none;
+  display: block;
+  border: 2px gray;
+  margin-bottom: 2%;
+  padding: 10px;
+}
+
+#nav-checkbox:checked ~ #page404-mobile {
+  height: 85vh;
+}
+
+h3 > span {
+  font-size: 3rem;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* media queries */
+@media screen and (min-width: 481px) {
+  .lessons-subtitle {
+    font-size: 1.7rem;
+    margin-bottom: 2%;
+  }
+
+  .lessons-title {
+    font-size: 165%;
+  }
+
+  .lessons-card p {
+    font-size: 1.3rem;
+  }
+
+  .start-now2 p {
+    font-size: 0.8rem;
+  }
+
+  h5 {
+    font-size: 1.65rem;
+  }
+
+  h6 {
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  .slide-title {
+    font-size: 1.3rem;
+  }
+
+  .instructor-card > p {
+    font-size: 1.15rem;
+    max-width: 90%;
+  }
+
+  .instructor-card > h4 {
+    margin-bottom: 3%;
+    text-align: left;
+  }
+
+  #about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #split-form {
+    margin: auto;
+    margin-bottom: 4%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .lessons-subtitle {
+    margin: 0;
+  }
+
+  h5 {
+    margin-top: 35px;
+  }
+
+  .lessons-card p {
+    margin-top: 15px;
+  }
+  h6 {
+    margin-top: 30px;
+  }
+  .slide-title {
+    position: absolute;
+    top: 40px;
+  }
+  .slides-item {
+    height: 80vh;
+  }
+  .slide-1 {
+    background-image: url(./images/carousel-img1-medium-pexels-cemal-taskiran.webp);
+    background-position-y: 105px;
+  }
+  .slide-2 {
+    background-image: url(./images/carousel-img2-medium-pexels-wendy-wei.webp);
+    background-position-y: 105px;
+  }
+  .slide-3 {
+    background-image: url(./images/carousel-img3-medium-pexels-nikita-igonkin.webp);
+    background-position-y: 105px;
+  }
+  #contact-us {
+    grid-template-columns: 45% 55%;
+  }
+
+  #bottom-form {
+    flex-direction: row;
+    height: auto;
+    margin-top: 5px;
+  }
+
+  .my-form {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .column-span-2 {
+    grid-column: span 2;
+  }
+
+  .map {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page-404 {
+    background-image: url(../images/404-img-pexels-para-bromas.webp);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .header1 {
+    display: none;
+  }
+
+  #logo {
+    visibility: hidden;
+  }
+  nav {
+    background-color: #457b9d;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  #logo1 {
+    border: none;
+  }
+
+  #welcome-message {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #welcome-message > img {
+    width: 50%;
+    max-width: 850px;
+    border-style: none;
+    margin-bottom: 0;
+  }
+
+  #welcome-text {
+    width: 40%;
+    max-width: 500px;
+    margin: 0;
+    height: 40%;
+  }
+
+  #service-cards {
+    flex-direction: row;
+  }
+
+  #lessons {
+    flex: 1;
+    margin-top: 0;
+  }
+
+  #camps {
+    flex: 1;
+    margin-top: 0;
+  }
+
+  hr {
+    margin-bottom: 0;
+  }
+
+  #rental {
+    margin-top: 20px;
+  }
+
+  #lessons1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+  }
+
+  #gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+  }
+  .item {
+    width: 49%;
+    margin-bottom: 1%;
+  }
+  #image-1,
+  #image-6 {
+    width: 100%;
+    height: auto;
+  }
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  .text-story > p {
+    max-width: 640px;
+    padding-top: 0;
+  }
+
+  #our-team {
+    width: 100%;
+  }
+
+  .instructor {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+  }
+
+  .instructor-card {
+    margin-bottom: 8%;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .desktop-nav {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+  }
+
+  .nav-link {
+    gap: 6%;
+  }
+
+  #hero {
+    background-image: url(./images/hero-img-desktop-pexels-saeid-anvar-.webp);
+    background-position-y: 0.1px;
+    height: 82vh;
+  }
+
+  #start-now {
+    margin-bottom: -4%;
+    margin-right: 12%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.9rem;
+  }
+
+  #contact-us {
+    scroll-margin-top: -35px;
+  }
+
+  #img-gallery {
+    scroll-margin-top: 80px;
+  }
+
+  #camp {
+    scroll-margin-top: 10px;
+  }
+
+  #lesson {
+    scroll-margin-top: 70px;
+  }
+
+  footer p {
+    width: 80%;
+    font-size: 1.15rem;
+  }
+
+  .social-media {
+    font-size: 1.75rem;
+  }
+}
