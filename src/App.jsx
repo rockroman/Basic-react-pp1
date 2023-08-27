@@ -1,6 +1,7 @@
 import "./App.css";
 import Camps from "./components/Camps";
 import Form from "./components/Form";
+import Gallery from "./components/Gallery";
 import LessonsCards from "./components/LessonsCards";
 import Nav_desktop from "./components/Nav_desktop";
 import Navbar from "./components/Navbar";
@@ -20,6 +21,7 @@ function App() {
       <Welcome />
       <LessonsCards />
       <Camps />
+      <Gallery />
       <Form />
     </>
   );

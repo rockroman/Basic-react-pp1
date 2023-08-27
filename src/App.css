@@ -25,6 +25,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: "Libre Caslon Text", serif;
+  /* background-color: var(--clr-header-nav-footer); */
 }
 
 #back_to_top {
@@ -142,6 +143,7 @@ label {
 .nav-menu li {
   list-style: none;
   color: var(--clr-hero2-txt);
+  /* color: var(--clr-hero-txt); */
   font-size: 165%;
 }
 
@@ -234,6 +236,8 @@ a#start-now {
 
 h2 {
   font-size: 1.95rem;
+  color: var(--clr-header-nav-footer);
+  /* color: var(--clr-hero-txt); */
   width: 85%;
   margin-top: 0;
   vertical-align: bottom;
@@ -541,6 +545,25 @@ a.start-now2 {
 }
 
 /* GALLERY SECTION */
+
+#gallery-control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+.gallery-btn {
+  background-color: #457b9d;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 7%;
+  cursor: pointer;
+}
+#img-gallery {
+  margin: auto;
+}
 #gallery {
   display: flex;
   flex-direction: column;
