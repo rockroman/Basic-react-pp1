@@ -64,7 +64,7 @@ const Gallery = () => {
             src={urls.regular}
             className="item"
             alt=""
-            style={{ width: "49%", height: "70vh" }}
+            style={{ height: "70vh", marginTop: "5px" }}
           />
         );
       })}
@@ -76,6 +76,7 @@ const Gallery = () => {
         alt="crazy surfer"
         width="639"
         height="511"
+        style={{ marginTop: "5px" }}
       />
     </div>
   );

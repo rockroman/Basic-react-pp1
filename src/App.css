@@ -567,7 +567,7 @@ a.start-now2 {
 #gallery {
   display: flex;
   flex-direction: column;
-  padding: 0.4%;
+  padding: 1%;
 }
 
 picture {
@@ -1111,6 +1111,7 @@ h3 > span {
   #image-6 {
     width: 100%;
     height: auto;
+    margin-top: 5px;
   }
 
   h4 {
