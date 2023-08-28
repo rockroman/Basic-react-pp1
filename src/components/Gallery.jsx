@@ -1,6 +1,7 @@
 import axios, { Axios } from "axios";
 import { useEffect, useState } from "react";
 import surferImg from "../images/gallery-img1-desktop-ting-tse-wang-unsplash.webp";
+import surferImg2 from "../images/gallery-img1-small-ting-tse-wang-unsplash.webp";
 
 const unsplashApiKey = import.meta.env.VITE_REACT_APP_UNSPLASH_API_KEY;
 
@@ -45,7 +46,9 @@ const Gallery = () => {
   return (
     <div id="gallery">
       <div id="gallery-control">
-        <h3 className="section-title">GALLERY</h3>
+        <h3 className="section-title" id="img-gallery">
+          GALLERY
+        </h3>
         <div>
           <button
             className="gallery-btn"
@@ -68,7 +71,7 @@ const Gallery = () => {
           />
         );
       })}
-      <img
+      {/* <img
         className="item"
         id="image-1"
         loading="lazy"
@@ -77,6 +80,15 @@ const Gallery = () => {
         width="639"
         height="511"
         style={{ marginTop: "5px" }}
+      /> */}
+      <img
+        loading="lazy"
+        srcSet={surferImg}
+        sizes="(min-width: 640px) 100vw"
+        src={surferImg2}
+        className="item"
+        id="image-1"
+        alt="Male surfer jumping on a wave with yellow surfing board"
       />
     </div>
   );
