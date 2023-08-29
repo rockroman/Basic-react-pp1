@@ -15,17 +15,6 @@ const Form = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const myForm = useRef();
 
-  // const validateEmail = (e) => {
-  //   var pattern = /^[^ ]+@[^ ]+.[a-z]{2,3}$/;
-  //   var email = e.target.value;
-
-  //   if (email.match(pattern)) {
-  //     setEmail(email);
-  //   } else {
-  //     setEmailError("error");
-  //   }
-  // };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, myForm.current, PUBLIC_KEY).then(

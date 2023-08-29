@@ -295,50 +295,57 @@ hr {
   justify-content: center;
   flex-direction: column;
 }
+.service-images {
+  width: 100%;
+}
 
-#lessons {
+/* #lessons {
+  padding: 4% 0;
+  margin-top: 2%;
+} */
+.our-service {
   padding: 4% 0;
   margin-top: 2%;
 }
 
-#lessons > h2 {
+.our-service > h2 {
   width: 100%;
   font-size: 1.5rem;
   text-align: center;
 }
 
-#our-lessons {
+/* #our-lessons {
   width: 100%;
-}
+} */
 
-#lessons > p {
+.our-service > p {
   font-size: 1.15rem;
   margin-bottom: 0;
   text-align: initial;
   padding: 0 2%;
 }
 
-#camps {
+/* #camps {
   padding: 4% 0;
   margin-top: 4%;
-}
+} */
 
-#camps > h2 {
+/* #camps > h2 {
   width: 100%;
   font-size: 1.5rem;
   text-align: center;
-}
+} */
 
-#our-camps {
+/* #our-camps {
   width: 100%;
-}
+} */
 
-#camps > p {
+/* #camps > p {
   font-size: 1.15rem;
   margin-bottom: 0;
   text-align: initial;
   padding: 0 2%;
-}
+} */
 
 #rental {
   padding: 1%;
@@ -1075,12 +1082,17 @@ h3 > span {
     flex-direction: row;
   }
 
-  #lessons {
+  /* #lessons {
     flex: 1;
     margin-top: 0;
   }
 
   #camps {
+    flex: 1;
+    margin-top: 0;
+  } */
+
+  .our-service {
     flex: 1;
     margin-top: 0;
   }
@@ -1185,6 +1197,10 @@ h3 > span {
   #lesson {
     scroll-margin-top: 70px;
   }
+
+  /* .our-service {
+    scroll-margin-top: 70px;
+  } */
 
   footer p {
     width: 80%;

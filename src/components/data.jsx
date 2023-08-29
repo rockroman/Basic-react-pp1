@@ -1,3 +1,5 @@
+import lessonsImg from "../images/lessons-img-mobile-pexels.webp";
+import CampsImg from "../images/camp-irish_camp-img-pexels.webp";
 export const navLinks = [
   { id: 1, href: "#lessons1", text: "Lessons" },
   { id: 2, href: "#camp", text: "Camps" },
@@ -45,5 +47,23 @@ export const carouselSlides = [
     id: "slide-3",
     slideClass: "slides-item slide-3",
     text: "ROCKY BAY CAMP",
+  },
+];
+
+export const service = [
+  {
+    id: 1,
+    title: "LESSONS",
+    src: lessonsImg,
+    altText: "3 surfers on a rocky beach Carrying Surfboards",
+    text: "Our proven learn to surf method is a systematic approach which creates fun, relaxed and supportive environment.you will get familiar with the art of surfing,technical skills,awareness in the ocean and beach safety. we provide a range of surf lessons kids group,private group and one-on-one lessons.",
+  },
+  {
+    id: 2,
+    title: "CAMPS",
+    src: CampsImg,
+    altText:
+      "Terace full of parasols by the beautiful red and white lighthouse",
+    text: "we can offer you to choose between our 3 beautiful camps all situated on a lovely Irish coast.Our highly trained professional instructors will pass onto you the knowledge,encourage and guide you through your surfing progression.",
   },
 ];

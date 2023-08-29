@@ -5,6 +5,7 @@ import Gallery from "./components/Gallery";
 import LessonsCards from "./components/LessonsCards";
 import Nav_desktop from "./components/Nav_desktop";
 import Navbar from "./components/Navbar";
+import Services from "./components/Services";
 import Welcome from "./components/Welcome";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -19,6 +20,7 @@ function App() {
       />
       <Nav_desktop />
       <Welcome />
+      <Services />
       <LessonsCards />
       <Camps />
       <Gallery />
