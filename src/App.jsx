@@ -1,4 +1,5 @@
 import "./App.css";
+import AboutUs from "./components/AboutUs";
 import Camps from "./components/Camps";
 import Form from "./components/Form";
 import Gallery from "./components/Gallery";
@@ -24,6 +25,7 @@ function App() {
       <LessonsCards />
       <Camps />
       <Gallery />
+      <AboutUs />
       <Form />
     </>
   );

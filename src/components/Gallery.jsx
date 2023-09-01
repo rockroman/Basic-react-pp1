@@ -66,21 +66,12 @@ const Gallery = () => {
             key={id}
             src={urls.regular}
             className="item"
-            alt=""
+            alt={alt_description}
             style={{ height: "70vh", marginTop: "5px" }}
           />
         );
       })}
-      {/* <img
-        className="item"
-        id="image-1"
-        loading="lazy"
-        src={surferImg}
-        alt="crazy surfer"
-        width="639"
-        height="511"
-        style={{ marginTop: "5px" }}
-      /> */}
+
       <img
         loading="lazy"
         srcSet={surferImg}
