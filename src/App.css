@@ -15,6 +15,10 @@
   --clr-hr-background: #bf1b34;
   --clr-button: #056639;
 }
+
+.custom-color {
+  /* color: #e5eeea; */
+}
 /* smooth scroll for back to top button */
 html {
   scroll-behavior: smooth;
@@ -640,12 +644,28 @@ h3 {
 #our-team > h3 {
   font-size: 1.5rem;
 }
-
+.instructor {
+  display: flex;
+  flex-direction: column;
+}
 .instructor-card {
   width: 100%;
   max-width: 640px;
-  margin-bottom: 20%;
+  padding: 5px;
 }
+/* .instructor {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.instructor-card {
+  width: 100%;
+  width: 45vw;
+  max-width: 640px;
+  max-width: 45vw;
+  margin-bottom: 20%;
+} */
 
 .instructor-img {
   width: 100%;
@@ -1139,8 +1159,17 @@ h3 > span {
   #our-team {
     width: 100%;
   }
-
   .instructor {
+    gap: 3%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .instructor-card {
+    width: 45vw;
+  }
+
+  /* .instructor {
     display: flex;
     gap: 3%;
     justify-content: center;
@@ -1148,7 +1177,9 @@ h3 > span {
 
   .instructor-card {
     margin-bottom: 8%;
-  }
+    width: 45vw;
+    width: 100%;
+  } */
 }
 
 @media screen and (min-width: 920px) {

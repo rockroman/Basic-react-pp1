@@ -1,4 +1,4 @@
-import { carouselSlides } from "./data";
+import { carouselSlides } from "../data";
 
 const CampSLides = () => {
   console.log(carouselSlides);

@@ -1,14 +1,14 @@
 import "./App.css";
-import AboutUs from "./components/AboutUs";
-import Camps from "./components/Camps";
-import Form from "./components/Form";
-import Gallery from "./components/Gallery";
-import LessonsCards from "./components/LessonsCards";
-import Nav_desktop from "./components/Nav_desktop";
-import Navbar from "./components/Navbar";
-import Services from "./components/Services";
-import Welcome from "./components/Welcome";
+import AboutUs from "./components/aboutUs/AboutUs";
+import Camps from "./components/camps/Camps";
+import Form from "./components/contactUs/Form";
+import LessonsCards from "./components/lessons/LessonsCards";
+import Nav_desktop from "./components/navbar/Nav_desktop";
+import Navbar from "./components/navbar/Navbar";
+import Services from "./components/services/Services";
+import Welcome from "./components/hero/Welcome";
 import { ToastContainer, toast } from "react-toastify";
+import Gallery from "./components/gallery/Gallery";
 
 function App() {
   return (

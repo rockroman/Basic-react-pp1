@@ -1,4 +1,4 @@
-import sufrersImg from "../images/2-surfers-welcome-img-pexels.webp";
+import sufrersImg from "../../images/2-surfers-welcome-img-pexels.webp";
 const Welcome = () => {
   return (
     <section id="welcome-section">
@@ -16,10 +16,10 @@ const Welcome = () => {
           height="511"
         />
         <div id="welcome-text">
-          <h3>
-            WELCOME TO THE SURF<em>ON</em>
+          <h3 className="custom-color">
+            WELCOME TO THE SURF<em className="custom-color">ON</em>
           </h3>
-          <p>
+          <p className="custom-color">
             As a group of international surfing enthusiasts Surfing is our life
             and We want to make sure that you have the best experience possible
             out there in the ocean,catch your first wave, achieve your dream and

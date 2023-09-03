@@ -1,10 +1,8 @@
-import logo from "../images/surf-logo1.jpg";
-import ".././App.css";
-// import backgroundImg from "../images/hero-img-desktop-pexels-saeid-anvar-.webp";
-import { navLinks } from "./data";
+import logo from "../../images/surf-logo1.jpg";
+import "../../App.css";
+import { navLinks } from "../data";
 const Nav_desktop = () => {
   return (
-    // <main id="hero" style={{ backgroundImage: `url(${backgroundImg})` }}>
     <main id="hero">
       <nav className="desktop-nav">
         <img loading="lazy" src={logo} alt="" id="logo1" />
@@ -21,7 +19,7 @@ const Nav_desktop = () => {
       </nav>
       <img loading="lazy" src={logo} alt="" id="logo" />
       <div className="hero-bottom">
-        <h1>YOUR SURFING ADVENTURE START'S </h1>
+        <h1 className="custom-color">YOUR SURFING ADVENTURE START'S </h1>
         <a href="#contact-us" id="start-now">
           <p>START NOW</p>
         </a>

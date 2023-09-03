@@ -1,5 +1,5 @@
 import React from "react";
-import { navLinks } from "./data";
+import { navLinks } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";

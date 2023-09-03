@@ -1,5 +1,9 @@
 import lessonsImg from "../images/lessons-img-mobile-pexels.webp";
 import CampsImg from "../images/camp-irish_camp-img-pexels.webp";
+import ethanInstructor from "../images/our-team-img1-small-bobbie-jackson-unsplash.webp";
+import natalyaInstructor from "../images/our-team-img2-mobile-gustavo-torres-unsplash.webp";
+import henryInstructor from "../images/our-team-img3-mobile-janilson-furtado-unsplash.webp";
+import jenifferInstructor from "../images/uor-team-img4-mobile-ting-tse-wang-unsplash.webp";
 export const navLinks = [
   { id: 1, href: "#lessons1", text: "Lessons" },
   { id: 2, href: "#camp", text: "Camps" },
@@ -35,7 +39,7 @@ export const LessonsCardData = [
 export const carouselSlides = [
   {
     id: "slide-1",
-    slideClass: "slides-item slide-1",
+    slideClass: "slides-item slide-1 custom-color",
     text: "GARETSTOWN CAMP",
   },
   {
@@ -65,5 +69,36 @@ export const service = [
     altText:
       "Terace full of parasols by the beautiful red and white lighthouse",
     text: "we can offer you to choose between our 3 beautiful camps all situated on a lovely Irish coast.Our highly trained professional instructors will pass onto you the knowledge,encourage and guide you through your surfing progression.",
+  },
+];
+
+export const instructors = [
+  {
+    id: 1,
+    src: ethanInstructor,
+    instructorName: "Ethan Stewart",
+    text: "Ethan is founder of a company and a master level surfing instructor with more than 7 yrs. of experience",
+    alt: "man holding a surfing board on a beach",
+  },
+  {
+    id: 2,
+    src: natalyaInstructor,
+    instructorName: "Natalya Walsh",
+    text: "Natalya is our Co-founder,certified lifeguard and surfing instructor with years of experience",
+    alt: "young man with a cool haircut holding a surfing board on a beach",
+  },
+  {
+    id: 3,
+    src: henryInstructor,
+    instructorName: "Henry Mcavoy",
+    text: "Henry is surfing from age of 8 and now is mid level surf and stand Up Paddleboard instructor",
+    alt: "young man with a cool haircut holding a surfing board on a beach",
+  },
+  {
+    id: 4,
+    src: jenifferInstructor,
+    instructorName: "Jeniffer Wang",
+    text: "Jeniffer is senior level surf instructor with long history of surfing ,now working as a personal instructor",
+    alt: "Lady surfer riding a vawe looking very concentrated",
   },
 ];

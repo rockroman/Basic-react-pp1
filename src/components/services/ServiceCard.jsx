@@ -1,4 +1,4 @@
-import { service } from "./data";
+import { service } from "../data";
 const ServiceCard = () => {
   return (
     <div id="service-cards">
@@ -6,14 +6,14 @@ const ServiceCard = () => {
         const { id, title, src, altText, text } = singleService;
         return (
           <div key={id} className="our-service">
-            <h2>{title}</h2>
+            <h2 className="custom-color">{title}</h2>
             <img
               loading="lazy"
               className="service-images"
               src={src}
               alt={altText}
             />
-            <p>{text}</p>
+            <p className="custom-color">{text}</p>
           </div>
         );
       })}

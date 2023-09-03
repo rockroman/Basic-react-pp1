@@ -41,8 +41,10 @@ const Form = () => {
 
   return (
     <form className="my-form" onSubmit={handleSubmit} ref={myForm}>
-      <h3>GET IN TOUCH</h3>
-      <label htmlFor="full-name">YOUR FULL NAME</label>
+      <h3 className="custom-color">GET IN TOUCH</h3>
+      <label htmlFor="full-name" className="custom-color">
+        YOUR FULL NAME
+      </label>
       <input
         type="text"
         name="user_name"
@@ -52,7 +54,9 @@ const Form = () => {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <label htmlFor="email">ENTER YOUR EMAIL</label>
+      <label htmlFor="email" className="custom-color">
+        ENTER YOUR EMAIL
+      </label>
       <input
         type="email"
         name="email_id"
@@ -63,7 +67,9 @@ const Form = () => {
         required
       />
 
-      <label htmlFor="phone">ENTER YOUR PHONE</label>
+      <label htmlFor="phone" className="custom-color">
+        ENTER YOUR PHONE
+      </label>
       <input
         type="number"
         min="0"
@@ -73,7 +79,9 @@ const Form = () => {
         onChange={(e) => setPhone(e.target.value)}
         required
       />
-      <label htmlFor="message">Contact or Message us</label>
+      <label htmlFor="message" className="custom-color">
+        Contact or Message us
+      </label>
       <textarea
         name="message"
         id="message"

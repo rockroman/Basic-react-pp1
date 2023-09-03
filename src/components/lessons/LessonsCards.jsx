@@ -1,8 +1,8 @@
-import { LessonsCardData } from "./data";
+import { LessonsCardData } from "../data";
 const LessonsCards = () => {
   return (
     <div>
-      <h3 id="lesson" className="lessons-title section-title">
+      <h3 id="lesson" className="lessons-title section-title custom-color">
         LESSONS
       </h3>
       <section id="lessons1">
@@ -10,17 +10,17 @@ const LessonsCards = () => {
           const { id, subtitle, type, price, text } = lesson;
           return (
             <div className="lessons-card" key={id}>
-              <h4 className="lessons-subtitle">
+              <h4 className="lessons-subtitle custom-color">
                 {subtitle} <br />
                 {type}
               </h4>
-              <h5>
+              <h5 className="custom-color">
                 {price}
                 <br />
-                <em>person</em>
+                Person
               </h5>
-              <h6>Weekend training</h6>
-              <p>{text}</p>
+              <h6 className="custom-color">Weekend training</h6>
+              <p className="custom-color">{text}</p>
               <a href="#contact-us" className="start-now2">
                 <p>START NOW</p>
               </a>

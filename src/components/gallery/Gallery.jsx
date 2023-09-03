@@ -1,7 +1,8 @@
 import axios, { Axios } from "axios";
 import { useEffect, useState } from "react";
-import surferImg from "../images/gallery-img1-desktop-ting-tse-wang-unsplash.webp";
-import surferImg2 from "../images/gallery-img1-small-ting-tse-wang-unsplash.webp";
+import surferImg from "../../images/gallery-img1-desktop-ting-tse-wang-unsplash.webp";
+// import surferImg2 from "./images/gallery-img1-small-ting-tse-wang-unsplash.webp";
+import surferImg2 from "../../images/gallery-img1-small-ting-tse-wang-unsplash.webp";
 
 const unsplashApiKey = import.meta.env.VITE_REACT_APP_UNSPLASH_API_KEY;
 
@@ -46,7 +47,7 @@ const Gallery = () => {
   return (
     <div id="gallery">
       <div id="gallery-control">
-        <h3 className="section-title" id="img-gallery">
+        <h3 className="section-title custom-color" id="img-gallery">
           GALLERY
         </h3>
         <div>

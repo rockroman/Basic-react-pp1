@@ -4,7 +4,7 @@ import SlidesNav from "./SlidesNav";
 const Camps = () => {
   return (
     <div>
-      <h3 id="camp" className="section-title">
+      <h3 id="camp" className="section-title custom-color">
         CAMPS
       </h3>
       <section className="carousel" aria-label="carousel" tabIndex="0">
