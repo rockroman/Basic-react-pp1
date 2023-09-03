@@ -16,6 +16,17 @@
   --clr-button: #056639;
 }
 
+/* dark theme setup */
+
+.theme {
+  position: absolute;
+  background-color: var(--clr-navigation);
+  left: 6%;
+  top: 100px;
+  z-index: 2000;
+  padding: 1px 7px;
+}
+
 .custom-color {
   /* color: #e5eeea; */
 }
@@ -45,7 +56,7 @@ body {
 }
 
 /* putting logo of company in top left corner(logo made with "looka.com" */
-#logo1 {
+.logo1 {
   width: 90px;
   height: 100%;
   border: 2px solid rgb(0, 0, 0);

@@ -3,6 +3,7 @@ import { navLinks } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { BsSunFill } from "react-icons/bs";
 const Navbar = () => {
   return (
     <header className="header1">
