@@ -22,9 +22,7 @@ const Rentals = () => {
         experience in the water we can.
       </p>
       <div id="testemonial-quote">
-        <p className="custom-color">
-          SURFING ISN'T JUST A SPORT. IT'S A WAY OF LIFE.
-        </p>
+        <p>SURFING ISN'T JUST A SPORT. IT'S A WAY OF LIFE.</p>
       </div>
     </div>
   );

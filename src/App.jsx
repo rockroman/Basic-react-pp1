@@ -9,10 +9,12 @@ import Services from "./components/services/Services";
 import Welcome from "./components/hero/Welcome";
 import { ToastContainer, toast } from "react-toastify";
 import Gallery from "./components/gallery/Gallery";
+import DarkTheme from "./DarkTheme";
 
 function App() {
   return (
     <>
+      <DarkTheme />
       <Navbar />
       <ToastContainer
         position="top-right"

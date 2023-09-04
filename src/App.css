@@ -19,12 +19,18 @@
 /* dark theme setup */
 
 .theme {
-  position: absolute;
+  position: fixed;
   background-color: var(--clr-navigation);
   left: 6%;
   top: 100px;
   z-index: 2000;
-  padding: 1px 7px;
+  padding: 2px 15px;
+}
+.dark-theme {
+  background-color: var(--clr-header-nav-footer);
+}
+.dark-text {
+  color: var(--clr-hero-txt);
 }
 
 .custom-color {
@@ -720,7 +726,7 @@ h3 {
 .my-form {
   box-sizing: border-box;
   height: auto;
-  border: 2px solid rgba(167, 163, 130, 0.708);
+  /* border: 2px solid rgba(167, 163, 130, 0.708); */
   width: 100%;
   display: flex;
   flex-direction: column;

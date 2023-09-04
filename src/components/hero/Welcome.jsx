@@ -2,7 +2,7 @@ import sufrersImg from "../../images/2-surfers-welcome-img-pexels.webp";
 const Welcome = () => {
   return (
     <section id="welcome-section">
-      <h2>
+      <h2 className="custom-color">
         HERE.
         <br />
         RISE WITH WAVES.

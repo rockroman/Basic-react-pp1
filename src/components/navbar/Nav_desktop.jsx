@@ -1,15 +1,10 @@
 import logo from "../../images/surf-logo1.jpg";
 import "../../App.css";
 import { navLinks } from "../data";
-import { BsSunFill } from "react-icons/bs";
+
 const Nav_desktop = () => {
   return (
     <main id="hero">
-      <button className="theme">
-        {" "}
-        <BsSunFill />
-      </button>
-
       <nav className="desktop-nav">
         <img loading="lazy" src={logo} alt="" className="logo1" />
 
@@ -17,7 +12,7 @@ const Nav_desktop = () => {
           {navLinks.map((link) => {
             const { id, href, text } = link;
             return (
-              <a key={id} className="nav-btn" href={href}>
+              <a key={id} className="nav-btn " href={href}>
                 {text}
               </a>
             );
