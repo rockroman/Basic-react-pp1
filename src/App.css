@@ -1259,3 +1259,34 @@ h3 > span {
     font-size: 1.75rem;
   }
 }
+
+/* live weather styles */
+
+.live-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .live-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+  }
+}
+
+.camp-weather1 {
+  background-color: red;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.camp-weather2 {
+  background-color: yellow;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.camp-weather3 {
+  background-color: green;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
