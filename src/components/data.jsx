@@ -4,6 +4,10 @@ import ethanInstructor from "../images/our-team-img1-small-bobbie-jackson-unspla
 import natalyaInstructor from "../images/our-team-img2-mobile-gustavo-torres-unsplash.webp";
 import henryInstructor from "../images/our-team-img3-mobile-janilson-furtado-unsplash.webp";
 import jenifferInstructor from "../images/uor-team-img4-mobile-ting-tse-wang-unsplash.webp";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdAlternateEmail } from "react-icons/md";
+import { BsGeoAltFill } from "react-icons/bs";
+
 export const navLinks = [
   { id: 1, href: "#lessons1", text: "Lessons" },
   { id: 2, href: "#camp", text: "Camps" },
@@ -100,5 +104,29 @@ export const instructors = [
     instructorName: "Jeniffer Wang",
     text: "Jeniffer is senior level surf instructor with long history of surfing ,now working as a personal instructor",
     alt: "Lady surfer riding a vawe looking very concentrated",
+  },
+];
+
+export const contactCards = [
+  {
+    id: 1,
+    cardClass: "adress",
+    icon: <BsGeoAltFill />,
+    title: " Address",
+    text: "Garretstown Beach",
+  },
+  {
+    id: 2,
+    cardClass: "call",
+    icon: <BsFillTelephoneFill />,
+    title: "Talk to us ",
+    text: "+35387999000",
+  },
+  {
+    id: 3,
+    cardClass: "mail",
+    icon: <MdAlternateEmail />,
+    title: "Email us",
+    text: "surfon@gmail.com",
   },
 ];

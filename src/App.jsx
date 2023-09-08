@@ -10,6 +10,8 @@ import Welcome from "./components/hero/Welcome";
 import { ToastContainer, toast } from "react-toastify";
 import Gallery from "./components/gallery/Gallery";
 import DarkTheme from "./DarkTheme";
+import GoogleMap from "./components/contactUs/GoogleMap";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
       <Gallery />
       <AboutUs />
       <Form />
+      <Footer />
     </>
   );
 }
