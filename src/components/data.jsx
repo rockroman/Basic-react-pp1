@@ -40,17 +40,17 @@ export const carouselSlides = [
   {
     id: "slide-1",
     slideClass: "slides-item slide-1 custom-color",
-    text: "GARETSTOWN CAMP",
+    text: "GARETSTOWN CAMP - (Kinsale)",
   },
   {
     id: "slide-2",
     slideClass: "slides-item slide-2",
-    text: "RED STRAND CAMP",
+    text: "RED STRAND CAMP - (Clonakilty)",
   },
   {
     id: "slide-3",
     slideClass: "slides-item slide-3",
-    text: "ROCKY BAY CAMP",
+    text: "ROCKY BAY CAMP - (Nohaval)",
   },
 ];
 

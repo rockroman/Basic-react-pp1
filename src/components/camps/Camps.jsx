@@ -8,6 +8,7 @@ const Camps = () => {
       <h3 id="camp" className="section-title custom-color">
         CAMPS
       </h3>
+      <hr />
       <CampLiveWeather />
       <section className="carousel" aria-label="carousel" tabIndex="0">
         <CampSLides />

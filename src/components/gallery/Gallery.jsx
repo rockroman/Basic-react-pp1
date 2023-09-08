@@ -16,7 +16,7 @@ const Gallery = () => {
     const min = 1;
     const max = 55;
     const result = Math.floor(Math.random() * (max - min) + min);
-    console.log(result);
+    // console.log(result);
     return result;
   };
 
@@ -32,11 +32,11 @@ const Gallery = () => {
         }
       );
 
-      console.log(data);
-      console.log(data.results);
+      // console.log(data);
+      // console.log(data.results);
       setImages(data.results);
 
-      console.log(images);
+      // console.log(images);
     } catch (error) {}
   };
 

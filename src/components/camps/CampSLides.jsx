@@ -1,7 +1,7 @@
 import { carouselSlides } from "../data";
 
 const CampSLides = () => {
-  console.log(carouselSlides);
+  // console.log(carouselSlides);
   return (
     <div className="slides">
       {carouselSlides.map((slide) => {
