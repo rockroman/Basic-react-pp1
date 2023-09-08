@@ -7,6 +7,10 @@ import jenifferInstructor from "../images/uor-team-img4-mobile-ting-tse-wang-uns
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import { BsGeoAltFill } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs";
+import { FaTwitter } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 export const navLinks = [
   { id: 1, href: "#lessons1", text: "Lessons" },
@@ -43,7 +47,7 @@ export const LessonsCardData = [
 export const carouselSlides = [
   {
     id: "slide-1",
-    slideClass: "slides-item slide-1 custom-color",
+    slideClass: "slides-item slide-1",
     text: "GARETSTOWN CAMP - (Kinsale)",
   },
   {
@@ -128,5 +132,33 @@ export const contactCards = [
     icon: <MdAlternateEmail />,
     title: "Email us",
     text: "surfon@gmail.com",
+  },
+];
+
+export const appFooterLinks = [
+  {
+    id: 1,
+    address: "https://www.facebook.com/",
+    linkLabel: "link to company facebook page",
+    icon: <BsFacebook />,
+  },
+  {
+    id: 2,
+    address: "https://www.instagram.com/",
+    icon: "",
+    linkLabel: "link to company instagram page",
+    icon: <BsInstagram />,
+  },
+  {
+    id: 3,
+    address: "https://twitter.com/?lang=en",
+    linkLabel: "link to company twitter page",
+    icon: <FaTwitter />,
+  },
+  {
+    id: 4,
+    address: "https://www.linkedin.com/",
+    linkLabel: "link to company linkedin page",
+    icon: <BsLinkedin />,
   },
 ];
