@@ -4,8 +4,8 @@ import { BsDropletHalf } from "react-icons/bs";
 import { BsSpeedometer } from "react-icons/bs";
 import { BsWind } from "react-icons/bs";
 
-const weatherApiKey = import.meta.env.VITE_REACT_WEATHER_API_KEY;
-const url = `https://api.openweathermap.org/data/2.5/group?id=2963155,2965402,2962216&units=metric&appid=${weatherApiKey}`;
+const url =
+  "/.netlify/functions/liveWeather?group?id=2963155,2965402,2962216&units=metric";
 
 const CampLiveWeather = () => {
   const currentTime = new Date();
