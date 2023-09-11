@@ -721,6 +721,7 @@ h3 {
   gap: 3%;
   color: oldlace;
   font-family: system-ui, apple-system, Roboto, sans-serif;
+  padding: 5px;
 }
 
 .my-form {
@@ -826,6 +827,7 @@ footer #logo2 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 10px;
 }
 
 footer p {

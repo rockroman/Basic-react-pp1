@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  functions = "netlify/functions"
+  publish = "dist"
+[dev]
+  functionsPort = 8888
+
+[functions]
+  node_bundler = "esbuild"

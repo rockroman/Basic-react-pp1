@@ -20,28 +20,17 @@ const Gallery = () => {
     return result;
   };
 
-  const fetchImages = async (page) => {
+  const fetchImages = async (page, count) => {
+    let url = `/.netlify/functions/unsplash?page=${page}&per_page=${count}&query=surfing`;
     try {
-      const { data } = await axios(
-        `https://api.unsplash.com/search/photos?page=${page}&per_page=${count}&query=surfing`,
-        {
-          headers: {
-            Accept: "application/json",
-            Authorization: `Client-ID ${unsplashApiKey}`,
-          },
-        }
-      );
-
-      // console.log(data);
+      const { data } = await axios(url);
       // console.log(data.results);
       setImages(data.results);
-
-      // console.log(images);
     } catch (error) {}
   };
 
   useEffect(() => {
-    fetchImages(page);
+    fetchImages(page, count);
   }, [page]);
 
   return (
@@ -53,7 +42,7 @@ const Gallery = () => {
         <div>
           <button
             className="gallery-btn"
-            onClick={() => fetchImages(randomPage())}
+            onClick={() => fetchImages(randomPage(), count)}
           >
             More Images
           </button>

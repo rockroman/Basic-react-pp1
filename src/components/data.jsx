@@ -145,7 +145,7 @@ export const appFooterLinks = [
   {
     id: 2,
     address: "https://www.instagram.com/",
-    icon: "",
+
     linkLabel: "link to company instagram page",
     icon: <BsInstagram />,
   },
