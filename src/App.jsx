@@ -12,6 +12,7 @@ import Gallery from "./components/gallery/Gallery";
 import DarkTheme from "./DarkTheme";
 import GoogleMap from "./components/contactUs/GoogleMap";
 import Footer from "./components/footer/Footer";
+import BackToTopBtn from "./components/BackToTop/BackToTopBtn";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <AboutUs />
       <Form />
       <Footer />
+      <BackToTopBtn />
     </>
   );
 }
